@@ -1,0 +1,70 @@
+doctype html
+html(lang="en")
+    head
+        title Blog Final
+        meta(charset="utf-8")
+        script(src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous")
+        link(rel="stylesheet" href="css/normalize.css")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous")
+        link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous")
+        script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous")
+        script(src="https://use.fontawesome.com/5166c23225.js")
+        link(href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet")
+        link(href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet")
+
+
+
+        link(rel="stylesheet" href="css/screen.css")
+    body
+     nav.navbar.navbar-default.custom-navbar
+      div.container-fluid.for-nav-bg
+          div.container
+               div.navbar-header.custom-navbar-header
+                 button.navbar-toggle.collapsed.collapsed-menu-btn(type="button" data-toggle="collapse" data-target="#blog-final-navbar" aria-expanded="false")
+                   span.sr-only Toggle navigation
+                   span.icon-bar
+                   span.icon-bar
+                   span.icon-bar
+                 a.navbar-brand.custom-navbar-brand(href="#") Blog
+                   span.bold  template
+               div.collapse.navbar-collapse#blog-final-navbar
+                   ul.nav.navbar-nav.row.custom-left-menu
+                       li.active.left-li.with-form
+                           form.navbar-form.navbar-left.custom-nav-search
+                               fieldset.form-group
+                                   input.custom-form-control(type="text" placeholder="Search")
+                                   button.btn.btn-default.custom-search-btn(type="submit")
+                                       i.fa.fa-search(aria-hidden="true")
+                       li.left-li
+                         a(href="#") About
+                       li.left-li
+                         a(href="#") Cooperation
+                       li.left-li
+                         a(href="#") Contact
+                   ul.nav.navbar-nav.navbar-right.custom-right-menu
+                     li
+                       a(href="#") nature
+                     li
+                       a(href="#") people
+                     li
+                       a(href="#") trips
+                     li
+                       a(href="#") animals
+                     li
+                       a(href="#") fashion
+                     li
+                       a(href="#") tech
+                     li.dropdown
+                       a.dropdown-toggle(href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false") ...
+                       ul.dropdown-menu
+                         li
+                           a(href="#") some link
+                         li
+                           a(href="#") another link
+                         li
+                           a(href="#") and one more link
+                         li
+                           a(href="#") again link
+
+

@@ -1,0 +1,197 @@
+.navbar-default .navbar-nav > li > a {
+  font: inherit;
+  color: inherit;
+}
+
+.custom-navbar {
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+
+.custom-navbar .for-nav-bg {
+  padding: 0;
+}
+
+.custom-navbar .custom-navbar-brand {
+  color: #ffffff;
+  text-shadow: none;
+  border: none;
+  font: 400 18px/27px "PT Sans";
+  height: auto;
+}
+
+.custom-navbar .custom-navbar-brand:hover {
+  color: silver;
+}
+
+.custom-navbar .custom-navbar-brand .bold {
+  font-weight: 700;
+}
+
+.custom-navbar .custom-left-menu {
+  text-shadow: none;
+}
+
+.custom-navbar .custom-left-menu li {
+  color: #b2b2b2;
+  font: 400 14px/27px "PT Sans";
+}
+
+.custom-navbar .custom-left-menu li a {
+  text-shadow: none;
+  font: inherit;
+}
+
+.custom-navbar .custom-right-menu li {
+  text-transform: capitalize;
+  color: #1a54e7;
+  font: 400 14px/27px "PT Sans";
+}
+
+.custom-navbar .custom-right-menu li a {
+  text-shadow: none;
+  font: inherit;
+}
+
+.custom-navbar-header {
+  position: relative;
+}
+
+.custom-navbar-header:before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #1a54e7;
+  width: 1000px;
+  min-height: 200px;
+  z-index: -1;
+}
+
+.custom-nav-search {
+  width: auto;
+  margin: 0;
+  position: relative;
+}
+
+.custom-nav-search .custom-search-btn {
+  min-height: 66px;
+  border: none;
+  border-radius: 0;
+  background: #f6f6f6 none;
+  color: #b2b2b2;
+  box-shadow: none;
+  text-shadow: none;
+  outline: none;
+}
+
+.custom-nav-search .custom-form-control {
+  min-height: 66px;
+  border-radius: 0;
+  outline: none;
+  box-shadow: none;
+}
+
+.custom-nav-search .custom-form-control::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  text-align: right;
+  padding: 0 15px;
+}
+
+.custom-nav-search .custom-form-control::-moz-placeholder {
+  /* Firefox 19+ */
+  text-align: right;
+  padding: 0 15px;
+}
+
+.custom-nav-search .custom-form-control:-ms-input-placeholder {
+  /* IE 10+ */
+  text-align: right;
+  padding: 0 15px;
+}
+
+.custom-nav-search .custom-form-control:-moz-placeholder {
+  /* Firefox 18- */
+  text-align: right;
+  padding: 0 15px;
+}
+
+@media screen and (min-width: 767px) {
+  .custom-navbar .custom-navbar-brand {
+    font: 400 24px/36px "PT Sans";
+  }
+
+  .custom-navbar .custom-left-menu li {
+    font: 400 18px/36px "PT Sans";
+  }
+
+  .custom-navbar .custom-left-menu .with-form:hover .custom-form-control {
+    width: 150px;
+    border: 1px solid #b2b2b2;
+    border-top: none;
+  }
+
+  .custom-navbar .custom-left-menu .with-form:hover .custom-search-btn {
+    border: 1px solid #b2b2b2;
+    border-top: none;
+  }
+
+  .custom-navbar .custom-right-menu li {
+    font: 400 18px/36px "PT Sans";
+  }
+
+  .custom-nav-search .custom-search-btn {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+
+  .custom-form-control {
+    width: 0;
+    -webkit-transition: all 0.7s ease-in-out;
+    transition: all 0.7s ease-in-out;
+    left: 0;
+    z-index: 99;
+  }
+}
+
+@media screen and (min-width: 991px) {
+  .custom-navbar .custom-navbar-brand {
+    font: 400 24px/36px "PT Sans";
+  }
+
+  .custom-navbar .custom-left-menu li {
+    font: 400 18px/36px "PT Sans";
+  }
+
+  .custom-navbar .custom-left-menu .with-form:hover .custom-form-control {
+    width: 150px;
+    border: 1px solid #b2b2b2;
+    border-top: none;
+  }
+
+  .custom-navbar .custom-left-menu .with-form:hover .custom-search-btn {
+    border: 1px solid #b2b2b2;
+    border-top: none;
+  }
+
+  .custom-navbar .custom-right-menu li {
+    font: 400 18px/36px "PT Sans";
+  }
+
+  .custom-nav-search .custom-search-btn {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+
+  .custom-form-control {
+    width: 0;
+    -webkit-transition: all 0.7s ease-in-out;
+    transition: all 0.7s ease-in-out;
+    left: 0;
+    z-index: 99;
+  }
+}
