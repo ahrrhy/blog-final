@@ -31,7 +31,7 @@ gulp.task('jade', function() {
             pretty: true
         }))  // Собираем Jade только в папке ./assets/template/ исключая файлы с _*
         .on('error', console.log) // Если есть ошибки, выводим и продолжаем
-        .pipe(gulp.dest('dist')) // Записываем собранные файлы
+        .pipe(gulp.dest('../blog-final')) // Записываем собранные файлы
         .pipe(livereload(server)); // даем команду на перезагрузку страницы
 });
 
@@ -40,7 +40,7 @@ gulp.task('jade', function() {
 gulp.task('js', function() {
     gulp.src(['js/**/*.js', '!js/vendor/**/*.js'])
         .pipe(concat('common.js')) // Собираем все JS, кроме тех которые находятся в ./assets/js/vendor/**
-        .pipe(gulp.dest('dist/js'))
+        .pipe(gulp.dest('js'))
         .pipe(livereload(server)); // даем команду на перезагрузку страницы
 });
 
@@ -49,7 +49,7 @@ gulp.task('js', function() {
 gulp.task('images', function() {
     gulp.src('img/**/*')
         .pipe(imagemin())
-        .pipe(gulp.dest('dist/img'))
+        .pipe(gulp.dest('img'))
 });
 
 // Локальный сервер для разработки

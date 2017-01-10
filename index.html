@@ -1,26 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>blog-final</title>
-
-    <script src="jquery/src/jquery.js"></script>
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
+  <head>
+    <title>Blog Final</title>
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/normalize.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://use.fontawesome.com/5166c23225.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/screen.css">
-
-</head>
-<body>
-    <header class="container-fluid">
-
-    </header>
-</body>
+  </head>
+  <body>
+    <nav class="navbar navbar-default custom-navbar">
+      <div class="container-fluid">
+        <div class="navbar-header row">
+          <button type="button" data-toggle="collapse" data-target="#blog-final-navbar" aria-expanded="false" class="navbar-toggle collapsed collapsed-menu-btn"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+          <h1 class="brand-header"><a href="#" class="navbar-brand">Blog<span class="bold">template</span></a></h1>
+        </div>
+        <div id="blog-final-navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav row custom-left-menu">
+            <li class="active">
+              <form class="navbar-form navbar-left custom-nav-search">
+                <fieldset class="form-group">
+                  <input type="text" placeholder="Search" class="form-control custom-form-control">
+                  <button type="submit" class="btn btn-default custom-search-btn"><i aria-hidden="true" class="fa fa-search"></i></button>
+                </fieldset>
+              </form>
+            </li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Cooperation</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right custom-left-menu">
+            <li><a href="#">nature</a></li>
+            <li><a href="#">people</a></li>
+            <li><a href="#">trips</a></li>
+            <li><a href="#">animals</a></li>
+            <li><a href="#">fashion</a></li>
+            <li><a href="#">tech</a></li>
+            <li class="dropdown"><a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">...</a>
+              <ul class="dropdown-menu">
+                <li><a href="#">some link</a></li>
+                <li><a href="#">another link</a></li>
+                <li><a href="#">and one more link</a></li>
+                <li><a href="#">again link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </body>
 </html>

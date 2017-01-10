@@ -1,0 +1,10 @@
+$blue:#1a54e7;
+
+.custom-navbar{
+  background: none;
+  border: none;
+  box-shadow: none;
+  .brand-header a{
+    background-color: $blue;
+  }
+}
