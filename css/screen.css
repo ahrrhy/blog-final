@@ -43,6 +43,11 @@
   font: inherit;
 }
 
+.custom-navbar .custom-right-menu .active {
+  border-bottom: 2px solid #1a54e7;
+  background: none;
+}
+
 .custom-navbar .custom-right-menu li {
   text-transform: capitalize;
   color: #1a54e7;
@@ -52,6 +57,11 @@
 .custom-navbar .custom-right-menu li a {
   text-shadow: none;
   font: inherit;
+}
+
+.custom-navbar .custom-right-menu > .active > a {
+  box-shadow: none;
+  background: none;
 }
 
 .custom-navbar-header {
@@ -159,11 +169,11 @@
 
 @media screen and (min-width: 991px) {
   .custom-navbar .custom-navbar-brand {
-    font: 400 24px/36px "PT Sans";
+    font: 400 22px/36px "PT Sans";
   }
 
   .custom-navbar .custom-left-menu li {
-    font: 400 18px/36px "PT Sans";
+    font: 400 16px/36px "PT Sans";
   }
 
   .custom-navbar .custom-left-menu .with-form:hover .custom-form-control {
@@ -178,7 +188,7 @@
   }
 
   .custom-navbar .custom-right-menu li {
-    font: 400 18px/36px "PT Sans";
+    font: 400 16px/36px "PT Sans";
   }
 
   .custom-nav-search .custom-search-btn {

@@ -49,7 +49,7 @@ gulp.task('js', function() {
 gulp.task('images', function() {
     gulp.src('img/**/*')
         .pipe(imagemin())
-        .pipe(gulp.dest('img'))
+        .pipe(gulp.dest('dist/img/**/*'))
 });
 
 // Локальный сервер для разработки
@@ -114,6 +114,5 @@ gulp.task('build', function() {
     // image
     gulp.src('img/**/*')
         .pipe(imagemin())
-        .pipe(gulp.dest('dist/img'))
-
+        .pipe(gulp.dest('dist/img/**/*'))
 });
