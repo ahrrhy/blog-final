@@ -20,3 +20,23 @@ html(lang="en")
         header
             include include/_navbar
 
+        section.container-fluid.slider-section
+            div#carousel-on-welcome.carousel.slide(data-ride="carousel")
+                // Wrapper for slides
+                div.carousel-inner.slider-bg(role="listbox")
+                    .item.container.active
+                        img.img-responsive.people-photo(src="img/slider/photo-on-slider.png" alt="some-human")
+                        .carousel-caption.welcome-content-wrapper
+                            h1.welcome-header Maecenas quis lobortis nunc. Nullam sit vel odio congue vulputate a ut nisi.
+                    .item.container
+                        img.img-responsive.people-photo(src="img/slider/photo-on-slider.png" alt="some-human")
+                        .carousel-caption.welcome-content-wrapper
+                            h1.welcome-header Maecenas quis lobortis nunc. Nullam sit vel odio congue vulputate a ut nisi.
+            //Controls
+            a.left.carousel-control.custom-control.custom-left(href="#carousel-on-welcome" role="button" data-slide="prev")
+                span.chenron-control &lt;
+                span.sr-only Previous
+
+            a.right.carousel-control.custom-control.custom-right(href="#carousel-on-welcome" role="button" data-slide="next")
+                span.chenron-control &gt;
+                span.sr-only Next

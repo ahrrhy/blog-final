@@ -4,6 +4,7 @@
 }
 
 .custom-navbar {
+  margin-bottom: 0;
   background: none;
   border: none;
   box-shadow: none;
@@ -126,6 +127,41 @@
   /* Firefox 18- */
   text-align: right;
   padding: 0 15px;
+}
+
+.slider-section {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.slider-bg {
+  background: url("../img/slider/slider-bg.png");
+  height: calc(100vh - 70px);
+}
+
+.people-photo {
+  position: static;
+  margin: 0 auto;
+  padding-top: 20%;
+}
+
+.welcome-content-wrapper {
+  position: static;
+}
+
+.custom-control {
+  opacity: 1;
+  top: 40%;
+}
+
+.custom-control.custom-left,
+.custom-control.custom-right {
+  background: none;
+}
+
+.chevron-control {
+  font: 400 24px/36px "PT Sans";
+  color: black;
 }
 
 @media screen and (min-width: 767px) {
