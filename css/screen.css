@@ -60,9 +60,15 @@
   font: inherit;
 }
 
+.custom-navbar .custom-right-menu .custom-navbar-dropdown {
+  font: 400 36px/27px "PT Sans";
+  padding-top: 10px;
+}
+
 .custom-navbar .custom-right-menu > .active > a {
   box-shadow: none;
   background: none;
+  color: #1a54e7;
 }
 
 .custom-navbar-header {
@@ -84,13 +90,11 @@
 .custom-nav-search {
   width: auto;
   margin: 0;
-  position: relative;
+  padding: 0;
 }
 
 .custom-nav-search .custom-search-btn {
   min-height: 66px;
-  border: none;
-  border-radius: 0;
   background: #f6f6f6 none;
   color: #b2b2b2;
   box-shadow: none;
@@ -103,65 +107,41 @@
   border-radius: 0;
   outline: none;
   box-shadow: none;
+  border: none;
+  text-align: center;
 }
 
 .custom-nav-search .custom-form-control::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
-  text-align: right;
-  padding: 0 15px;
+  text-align: center;
+  padding: 0 30px;
 }
 
 .custom-nav-search .custom-form-control::-moz-placeholder {
   /* Firefox 19+ */
-  text-align: right;
+  text-align: center;
   padding: 0 15px;
 }
 
 .custom-nav-search .custom-form-control:-ms-input-placeholder {
   /* IE 10+ */
-  text-align: right;
+  text-align: center;
   padding: 0 15px;
 }
 
 .custom-nav-search .custom-form-control:-moz-placeholder {
   /* Firefox 18- */
-  text-align: right;
+  text-align: center;
   padding: 0 15px;
 }
 
 .slider-section {
-  margin-top: 0;
-  padding-top: 0;
-}
-
-.slider-bg {
-  background: url("../img/slider/slider-bg.png");
-  height: calc(100vh - 70px);
-}
-
-.people-photo {
-  position: static;
-  margin: 0 auto;
-  padding-top: 20%;
-}
-
-.welcome-content-wrapper {
-  position: static;
-}
-
-.custom-control {
-  opacity: 1;
-  top: 40%;
+  padding-top: 30px;
 }
 
 .custom-control.custom-left,
 .custom-control.custom-right {
   background: none;
-}
-
-.chevron-control {
-  font: 400 24px/36px "PT Sans";
-  color: black;
 }
 
 @media screen and (min-width: 767px) {
@@ -174,7 +154,7 @@
   }
 
   .custom-navbar .custom-left-menu .with-form:hover .custom-form-control {
-    width: 150px;
+    width: 300px;
     border: 1px solid #b2b2b2;
     border-top: none;
   }
@@ -188,17 +168,26 @@
     font: 400 18px/36px "PT Sans";
   }
 
+  .custom-nav-search {
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
+
   .custom-nav-search .custom-search-btn {
-    position: absolute;
-    left: 0;
-    bottom: 0;
+    position: relative;
+    border: none;
+    border-radius: 0;
   }
 
   .custom-form-control {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
     width: 0;
     -webkit-transition: all 0.7s ease-in-out;
     transition: all 0.7s ease-in-out;
-    left: 0;
     z-index: 99;
   }
 }
@@ -213,7 +202,6 @@
   }
 
   .custom-navbar .custom-left-menu .with-form:hover .custom-form-control {
-    width: 150px;
     border: 1px solid #b2b2b2;
     border-top: none;
   }
@@ -225,12 +213,6 @@
 
   .custom-navbar .custom-right-menu li {
     font: 400 16px/36px "PT Sans";
-  }
-
-  .custom-nav-search .custom-search-btn {
-    position: absolute;
-    left: 0;
-    bottom: 0;
   }
 
   .custom-form-control {
