@@ -1,206 +1,150 @@
 .navbar-default .navbar-nav > li > a {
   font: inherit;
-  color: inherit;
-}
+  color: inherit; }
 
 .custom-navbar {
   margin-bottom: 0;
   background: none;
   border: none;
-  box-shadow: none;
-}
-
-.custom-navbar .for-nav-bg {
-  padding: 0;
-}
-
-.custom-navbar .custom-navbar-brand {
-  color: #ffffff;
-  text-shadow: none;
-  border: none;
-  font: 400 18px/27px "PT Sans";
-  height: auto;
-}
-
-.custom-navbar .custom-navbar-brand:hover {
-  color: silver;
-}
-
-.custom-navbar .custom-navbar-brand .bold {
-  font-weight: 700;
-}
-
-.custom-navbar .custom-left-menu {
-  text-shadow: none;
-}
-
-.custom-navbar .custom-left-menu li {
-  color: #b2b2b2;
-  font: 400 14px/27px "PT Sans";
-}
-
-.custom-navbar .custom-left-menu li a {
-  text-shadow: none;
-  font: inherit;
-}
-
-.custom-navbar .custom-right-menu .active {
-  border-bottom: 2px solid #1a54e7;
-  background: none;
-}
-
-.custom-navbar .custom-right-menu li {
-  text-transform: capitalize;
-  color: #1a54e7;
-  font: 400 14px/27px "PT Sans";
-}
-
-.custom-navbar .custom-right-menu li a {
-  text-shadow: none;
-  font: inherit;
-}
-
-.custom-navbar .custom-right-menu .custom-navbar-dropdown {
-  font: 400 36px/27px "PT Sans";
-  padding-top: 10px;
-}
+  -webkit-box-shadow: none;
+          box-shadow: none; }
+  .custom-navbar .for-nav-bg {
+    padding: 0; }
+  .custom-navbar .custom-navbar-brand {
+    color: #ffffff;
+    text-shadow: none;
+    border: none;
+    font: 400 18px/27px "PT Sans";
+    height: auto; }
+    .custom-navbar .custom-navbar-brand:hover {
+      color: silver; }
+    .custom-navbar .custom-navbar-brand .bold {
+      font-weight: 700; }
+  .custom-navbar .custom-left-menu {
+    text-shadow: none; }
+    .custom-navbar .custom-left-menu li {
+      color: #b2b2b2;
+      font: 400 14px/27px "PT Sans"; }
+      .custom-navbar .custom-left-menu li a {
+        text-shadow: none;
+        font: inherit; }
+  .custom-navbar .custom-right-menu .active {
+    border-bottom: 2px solid #1a54e7;
+    background: none; }
+  .custom-navbar .custom-right-menu li {
+    text-transform: capitalize;
+    color: #1a54e7;
+    font: 400 14px/27px "PT Sans"; }
+    .custom-navbar .custom-right-menu li a {
+      text-shadow: none;
+      font: inherit; }
+  .custom-navbar .custom-right-menu .custom-navbar-dropdown {
+    font: 400 36px/27px "PT Sans";
+    padding-top: 10px; }
 
 .custom-navbar .custom-right-menu > .active > a {
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   background: none;
-  color: #1a54e7;
-}
+  color: #1a54e7; }
 
 .custom-navbar-header {
-  position: relative;
-}
-
-.custom-navbar-header:before {
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  background-color: #1a54e7;
-  width: 1000px;
-  min-height: 200px;
-  z-index: -1;
-}
+  position: relative; }
+  .custom-navbar-header:before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #1a54e7;
+    width: 1000px;
+    min-height: 200px;
+    z-index: -1; }
 
 .custom-nav-search {
   width: auto;
   margin: 0;
-  padding: 0;
-}
-
-.custom-nav-search .custom-search-btn {
-  min-height: 66px;
-  background: #f6f6f6 none;
-  color: #b2b2b2;
-  box-shadow: none;
-  text-shadow: none;
-  outline: none;
-}
-
-.custom-nav-search .custom-form-control {
-  min-height: 66px;
-  border-radius: 0;
-  outline: none;
-  box-shadow: none;
-  border: none;
-  text-align: center;
-}
-
-.custom-nav-search .custom-form-control::-webkit-input-placeholder {
-  /* Chrome/Opera/Safari */
-  text-align: center;
-  padding: 0 30px;
-}
-
-.custom-nav-search .custom-form-control::-moz-placeholder {
-  /* Firefox 19+ */
-  text-align: center;
-  padding: 0 15px;
-}
-
-.custom-nav-search .custom-form-control:-ms-input-placeholder {
-  /* IE 10+ */
-  text-align: center;
-  padding: 0 15px;
-}
-
-.custom-nav-search .custom-form-control:-moz-placeholder {
-  /* Firefox 18- */
-  text-align: center;
-  padding: 0 15px;
-}
+  padding: 0; }
+  .custom-nav-search .custom-search-btn {
+    min-height: 66px;
+    background: #f6f6f6 none;
+    color: #b2b2b2;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    text-shadow: none;
+    outline: none; }
+  .custom-nav-search .custom-form-control {
+    min-height: 66px;
+    -webkit-border-radius: 0;
+            border-radius: 0;
+    outline: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border: none;
+    text-align: center; }
+    .custom-nav-search .custom-form-control::-webkit-input-placeholder {
+      /* Chrome/Opera/Safari */
+      text-align: center;
+      padding: 0 30px; }
+    .custom-nav-search .custom-form-control::-moz-placeholder {
+      /* Firefox 19+ */
+      text-align: center;
+      padding: 0 15px; }
+    .custom-nav-search .custom-form-control:-ms-input-placeholder {
+      /* IE 10+ */
+      text-align: center;
+      padding: 0 15px; }
+    .custom-nav-search .custom-form-control:-moz-placeholder {
+      /* Firefox 18- */
+      text-align: center;
+      padding: 0 15px; }
 
 .slider-section .custom-slider {
   background: url("../img/slider/slider-bg.png") center/cover no-repeat;
-  height: calc(100vh - 70px);
-}
-
-.slider-section .custom-slider .slides-list .custom-slide {
-  width: auto;
-  margin: 25% auto 5%;
-}
-
-.slider-section .custom-slider .slides-list .flex-caption {
-  text-align: center;
-  padding: 2%;
-  color: #fff;
-  font-size: 14px;
-  line-height: 18px;
-}
+  height: -webkit-calc(100vh - 70px);
+  height: calc(100vh - 70px); }
+  .slider-section .custom-slider .slides-list .custom-slide {
+    width: auto;
+    margin: 25% auto 5%; }
+  .slider-section .custom-slider .slides-list .flex-caption {
+    text-align: center;
+    padding: 2%;
+    color: #fff;
+    font-size: 14px;
+    line-height: 18px; }
 
 .slider-section .flex-direction-nav li > a {
   background-color: #ffffff;
   width: 40px;
   height: 50px;
-  top: 60%;
-}
+  top: 60%; }
 
-.flex-control-nav,
-.flex-control-paging {
-  display: none;
-}
+.flex-control-nav, .flex-control-paging {
+  display: none; }
 
 @media screen and (min-width: 767px) {
   .custom-navbar .custom-navbar-brand {
-    font: 400 24px/36px "PT Sans";
-  }
-
+    font: 400 24px/36px "PT Sans"; }
   .custom-navbar .custom-left-menu li {
-    font: 400 18px/36px "PT Sans";
-  }
-
+    font: 400 18px/36px "PT Sans"; }
   .custom-navbar .custom-left-menu .with-form:hover .custom-form-control {
     width: 300px;
     border: 1px solid #b2b2b2;
-    border-top: none;
-  }
-
+    border-top: none; }
   .custom-navbar .custom-left-menu .with-form:hover .custom-search-btn {
     border: 1px solid #b2b2b2;
-    border-top: none;
-  }
-
+    border-top: none; }
   .custom-navbar .custom-right-menu li {
-    font: 400 18px/36px "PT Sans";
-  }
-
+    font: 400 18px/36px "PT Sans"; }
   .custom-nav-search {
     width: auto;
     margin: 0;
-    padding: 0;
-  }
-
-  .custom-nav-search .custom-search-btn {
-    position: relative;
-    border: none;
-    border-radius: 0;
-  }
-
+    padding: 0; }
+    .custom-nav-search .custom-search-btn {
+      position: relative;
+      border: none;
+      -webkit-border-radius: 0;
+              border-radius: 0; }
   .custom-form-control {
     position: absolute;
     top: 0;
@@ -209,38 +153,24 @@
     width: 0;
     -webkit-transition: all 0.7s ease-in-out;
     transition: all 0.7s ease-in-out;
-    z-index: 99;
-  }
-}
+    z-index: 99; } }
 
 @media screen and (min-width: 991px) {
   .custom-navbar .custom-navbar-brand {
-    font: 400 22px/36px "PT Sans";
-  }
-
+    font: 400 22px/36px "PT Sans"; }
   .custom-navbar .custom-left-menu li {
-    font: 400 16px/36px "PT Sans";
-  }
-
+    font: 400 16px/36px "PT Sans"; }
   .custom-navbar .custom-left-menu .with-form:hover .custom-form-control {
     border: 1px solid #b2b2b2;
-    border-top: none;
-  }
-
+    border-top: none; }
   .custom-navbar .custom-left-menu .with-form:hover .custom-search-btn {
     border: 1px solid #b2b2b2;
-    border-top: none;
-  }
-
+    border-top: none; }
   .custom-navbar .custom-right-menu li {
-    font: 400 16px/36px "PT Sans";
-  }
-
+    font: 400 16px/36px "PT Sans"; }
   .custom-form-control {
     width: 0;
     -webkit-transition: all 0.7s ease-in-out;
     transition: all 0.7s ease-in-out;
     left: 0;
-    z-index: 99;
-  }
-}
+    z-index: 99; } }
