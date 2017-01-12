@@ -23,12 +23,13 @@ gulp.task('sass', function() {
         .pipe(browserSync.reload({stream: true}));// Обновляем CSS на странице при изменении
 });
 gulp.task('jade', function() {
-    gulp.src(['template/*.jade'])
+    gulp.src(['template/**/*.jade', '!template/**/_*.jade'])
         .pipe(jade({
             pretty: true
         }))  // Собираем Jade
         .on('error', console.log) // Если есть ошибки, выводим и продолжаем
-        .pipe(gulp.dest('../blog-final')); // Записываем собранные файлы
+        .pipe(gulp.dest(''))
+        .pipe(browserSync.reload({stream: true})); // Записываем собранные файлы
 });
 
 gulp.task('browser-sync', function() { // Создаем таск browser-sync
@@ -73,11 +74,11 @@ gulp.task('img', function() {
         .pipe(gulp.dest('img')); //
 });
 
-gulp.task('watch', ['browser-sync','css-libs','scripts', 'sass', 'jade'], function () {
+gulp.task('watch', ['jade', 'browser-sync','css-libs','scripts', 'sass' ], function () {
+    gulp.watch(['template/**/*.jade'],['jade'], browserSync.reload);
     gulp.watch('sass/**.*scss', ['sass']);
     gulp.watch('*.html', browserSync.reload); // Наблюдение за HTML файлами в корне проекта
     gulp.watch('js/**/*.js', browserSync.reload); // Наблюдение за JS файлами в папке js
-    gulp.watch('template/*.jade', browserSync.reload);
 });
 
 gulp.task('build', ['clean', 'img', 'sass', 'scripts'], function() {

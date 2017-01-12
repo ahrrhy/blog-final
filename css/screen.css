@@ -100,27 +100,112 @@
       padding: 0 15px; }
 
 .slider-section .custom-slider {
-  background: url("../img/slider/slider-bg.png") center/cover no-repeat;
-  height: -webkit-calc(100vh - 70px);
-  height: calc(100vh - 70px); }
+  margin-bottom: 0;
+  border: none;
+  background: url("../img/slider/slider-bg.png") center/cover no-repeat; }
   .slider-section .custom-slider .slides-list .custom-slide {
     width: auto;
-    margin: 25% auto 5%; }
-  .slider-section .custom-slider .slides-list .flex-caption {
+    margin: 15% auto 5%; }
+  .slider-section .custom-slider .slides-list .flex-caption h1 {
     text-align: center;
     padding: 2%;
     color: #fff;
-    font-size: 14px;
-    line-height: 18px; }
+    font: 400 30px/40px "PT Serif"; }
 
 .slider-section .flex-direction-nav li > a {
   background-color: #ffffff;
-  width: 40px;
+  width: 30px;
   height: 50px;
-  top: 60%; }
+  top: 40%; }
+
+.tag-info-wrapper .mark-wrapper {
+  display: inline-block; }
+  .tag-info-wrapper .mark-wrapper .mark-tag {
+    background-color: #1a54e7;
+    color: #ffffff;
+    font: 700 16px/36px "PT Sans";
+    text-transform: capitalize;
+    padding: 15%;
+    -webkit-transition: all 0.7s;
+    transition: all 0.7s; }
+    .tag-info-wrapper .mark-wrapper .mark-tag:hover {
+      color: #1a54e7;
+      background-color: #ffffff; }
+  .tag-info-wrapper .mark-wrapper a {
+    color: inherit;
+    text-decoration: none; }
+
+.tag-info-wrapper .publish-info {
+  float: right; }
+  .tag-info-wrapper .publish-info .publish-date {
+    color: #8e8e8e;
+    font: 400 12px/36px "PT Sans";
+    padding: 2% 0 2% 2%; }
+    .tag-info-wrapper .publish-info .publish-date:after {
+      content: " ";
+      border-right: 1px solid #8e8e8e; }
+    .tag-info-wrapper .publish-info .publish-date a {
+      color: inherit; }
+  .tag-info-wrapper .publish-info .publish-author {
+    padding: 2%;
+    word-spacing: -0.05rem;
+    font: 400 12px/36px "PT Sans";
+    color: #1a54e7;
+    text-decoration: underline;
+    -webkit-transition: all 0.7s;
+    transition: all 0.7s; }
+    .tag-info-wrapper .publish-info .publish-author:hover {
+      color: #ffffff; }
 
 .flex-control-nav, .flex-control-paging {
   display: none; }
+
+.red {
+  background-color: #d90445; }
+
+.black {
+  background-color: black; }
+
+.latest-articles {
+  background-color: #f6f6f6;
+  padding: 2% 0; }
+  .latest-articles .tag-wrapper {
+    position: inherit; }
+    .latest-articles .tag-wrapper .tag {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      color: #fff;
+      font: 700 18px/36px "PT Sans";
+      padding: 1% 5%;
+      text-transform: capitalize;
+      -webkit-transition: all 0.7s;
+      transition: all 0.7s; }
+      .latest-articles .tag-wrapper .tag a {
+        color: inherit;
+        text-decoration: none; }
+  .latest-articles .latest-article-header {
+    color: #000;
+    font: 400 24px/36px "PT Serif"; }
+  .latest-articles .publish-info .publish-date {
+    color: #8e8e8e;
+    font: 400 12px/36px "PT Sans";
+    padding: 2% 0 2% 2%; }
+    .latest-articles .publish-info .publish-date:after {
+      content: " ";
+      border-right: 1px solid #8e8e8e; }
+    .latest-articles .publish-info .publish-date a {
+      color: inherit; }
+  .latest-articles .publish-info .publish-author {
+    padding: 2%;
+    word-spacing: -0.05rem;
+    font: 400 12px/36px "PT Sans";
+    color: #1a54e7;
+    text-decoration: underline;
+    -webkit-transition: all 0.7s;
+    transition: all 0.7s; }
+    .latest-articles .publish-info .publish-author:hover {
+      color: #10328b; }
 
 @media screen and (min-width: 767px) {
   .custom-navbar .custom-navbar-brand {
@@ -153,7 +238,23 @@
     width: 0;
     -webkit-transition: all 0.7s ease-in-out;
     transition: all 0.7s ease-in-out;
-    z-index: 99; } }
+    z-index: 99; }
+  .slider-section .flex-direction-nav li > a {
+    width: 40px;
+    height: 50px;
+    top: 60%; }
+  .slider-section .custom-slider .slides-list .flex-caption h1 {
+    font: 400 48px/60px "PT Serif";
+    padding: 0 0 20%; } }
+
+.tag-info-wrapper .mark-wrapper .mark-tag {
+  font: 700 18px/38px "PT Sans"; }
+
+.tag-info-wrapper .publish-info .publish-date {
+  font: 400 14px/38px "PT Sans"; }
+
+.tag-info-wrapper .publish-info .publish-author {
+  font: 400 14px/38px "PT Sans"; }
 
 @media screen and (min-width: 991px) {
   .custom-navbar .custom-navbar-brand {

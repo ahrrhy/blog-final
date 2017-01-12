@@ -4,7 +4,7 @@
     <title>Blog Final</title>
     <meta charset="utf-8">
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/libs/normalize.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
@@ -62,17 +62,55 @@
     </header>
     <section class="slider-section">
       <div class="container-fluid flexslider custom-slider">
-        <ul class="row slides slides-list">
+        <ul class="slides slides-list">
           <li><img src="img/slider/photo-on-slider.png" alt="photo" class="img-responsive custom-slide">
-            <h1 class="flex-caption">Maecenas quis lobortis nunc. Nullam sit vel odio congue vulputate a ut nisi.</h1>
+            <div class="flex-caption container">
+              <h1>Maecenas quis lobortis nunc. Nullam sit vel odio congue vulputate a ut nisi.</h1>
+              <div class="row tag-info-wrapper">
+                <p class="mark-wrapper"><span class="mark-tag"><a href="#">people</a></span></p>
+                <p class="publish-info"><span class="publish-date">14 septemvber 2016</span><a href="#" class="publish-author">John Doe</a></p>
+              </div>
+            </div>
           </li>
           <li><img src="img/slider/photo-on-slider.png" alt="photo" class="img-responsive custom-slide">
-            <h1 class="flex-caption">Maecenas quis lobortis nunc. Nullam sit vel odio congue vulputate a ut nisi.</h1>
+            <div class="flex-caption container">
+              <h1>Maecenas quis lobortis nunc. Nullam sit vel odio congue vulputate a ut nisi.</h1>
+              <div class="row tag-info-wrapper">
+                <p class="mark-wrapper"><span class="mark-tag"><a href="#">people</a></span></p>
+                <p class="publish-info"><span class="publish-date">14 septemvber 2016</span><a href="#" class="publish-author">John Doe</a></p>
+              </div>
+            </div>
           </li>
           <li><img src="img/slider/photo-on-slider.png" alt="photo" class="img-responsive custom-slide">
-            <h1 class="flex-caption">Maecenas quis lobortis nunc. Nullam sit vel odio congue vulputate a ut nisi.</h1>
+            <div class="flex-caption container">
+              <h1>Maecenas quis lobortis nunc. Nullam sit vel odio congue vulputate a ut nisi.</h1>
+              <div class="row tag-info-wrapper">
+                <p class="mark-wrapper"><span class="mark-tag"><a href="#">people</a></span></p>
+                <p class="publish-info"><span class="publish-date">14 septemvber 2016</span><a href="#" class="publish-author">John Doe</a></p>
+              </div>
+            </div>
           </li>
         </ul>
+      </div>
+    </section>
+    <section class="container-fluid latest-articles">
+      <div class="container">
+        <div class="row">
+          <article class="col-md-6 latest-article-one">
+            <div class="tag-wrapper"><img src="img/latest-articles/photo1.png" alt="photo" class="img-responsive article-img">
+              <p class="tag red"><a href="#" target="blank">trips</a></p>
+            </div>
+            <h2 class="latest-article-header">Donec elementum dui semper, pretium dui quis, pretium nisl. Nunc quis ornare odio.</h2>
+            <p class="publish-info"><span class="publish-date">11 septemvber 2016</span><a href="#" class="publish-author">John Doe</a></p>
+          </article>
+          <article class="col-md-6 latest-article-one">
+            <div class="tag-wrapper"><img src="img/latest-articles/photo2.png" alt="photo" class="img-responsive article-img">
+              <p class="tag black"><a href="#" target="blank">tech</a></p>
+            </div>
+            <h2 class="latest-article-header">Maecenas quis lobortis nunc. Nullam sit amet augue vel odio congue vulputate a ut nisi.</h2>
+            <p class="publish-info"><span class="publish-date">14 septemvber 2016</span><a href="#" class="publish-author">John Doe</a></p>
+          </article>
+        </div>
       </div>
     </section>
   </body>
