@@ -15,7 +15,7 @@ var gulp        = require('gulp'),
     jade         = require('gulp-jade'), // Плагин для Jade
 
 gulp.task('sass', function() {
-    return gulp.src('sass/**/*.scss')
+    return gulp.src('scss/**/*.scss')
         .pipe(sass())
         .on('error', console.log)
         .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true })) // Создаем префиксы
@@ -76,7 +76,7 @@ gulp.task('img', function() {
 
 gulp.task('watch', ['jade', 'browser-sync','css-libs','scripts', 'sass' ], function () {
     gulp.watch(['template/**/*.jade'],['jade'], browserSync.reload);
-    gulp.watch('sass/**.*scss', ['sass']);
+    gulp.watch('scss/**.*scss', ['sass']);
     gulp.watch('*.html', browserSync.reload); // Наблюдение за HTML файлами в корне проекта
     gulp.watch('js/**/*.js', browserSync.reload); // Наблюдение за JS файлами в папке js
 });

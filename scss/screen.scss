@@ -1,0 +1,387 @@
+$blue:#1a54e7;
+$light-grey:#b2b2b2;
+$silver:silver;
+$red:#d90445;
+
+.navbar-default .navbar-nav>li>a {
+  font: inherit;
+  color: inherit;
+}
+.custom-navbar {
+  margin-bottom: 0;
+  .for-nav-bg{
+    padding: 0;
+  }
+  background: none;
+  border: none;
+  box-shadow: none;
+  .custom-navbar-brand{
+    color: #ffffff;
+    text-shadow: none;
+    border: none;
+    font: 400 18px/27px "PT Sans";
+    height: auto;
+    &:hover{
+      color: $silver;
+    }
+    & .bold{
+      font-weight: 700;
+    }
+  }
+  .custom-left-menu{
+    text-shadow: none;
+    & li{
+      color: $light-grey;
+      font: 400 14px/27px "PT Sans";
+      & a{
+        text-shadow: none;
+        font: inherit;
+      }
+    }
+  }
+  .custom-right-menu{
+    & .active{
+      border-bottom: 2px solid $blue;
+      background: none;
+    }
+    & li{
+      text-transform: capitalize;
+      color: $blue;
+      font: 400 14px/27px "PT Sans";
+      & a{
+        text-shadow: none;
+        font: inherit;
+      }
+    }
+    .custom-navbar-dropdown{
+      font: 400 36px/27px "PT Sans";
+      padding-top: 10px;
+    }
+  }
+}
+.custom-navbar .custom-right-menu>.active>a{
+  box-shadow: none;
+  background: none;
+  color: $blue;
+}
+.custom-navbar-header{
+  position: relative;
+  &:before{
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: $blue;
+    width: 1000px;
+    min-height: 200px;
+    z-index: -1;
+  }
+}
+.custom-nav-search{
+  width: auto;
+  margin: 0;
+  padding: 0;
+  .custom-search-btn{
+    min-height: 66px;
+    background: #f6f6f6 none;
+    color: $light-grey;
+    box-shadow: none;
+    text-shadow: none;
+    outline: none;
+  }
+  .custom-form-control{
+    min-height: 66px;
+    border-radius: 0;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    text-align: center;
+    &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+      text-align: center;
+      padding: 0 30px;
+
+    }
+    &::-moz-placeholder { /* Firefox 19+ */
+      text-align: center;
+      padding: 0 15px;
+
+    }
+    &:-ms-input-placeholder { /* IE 10+ */
+      text-align: center;
+      padding: 0 15px;
+
+    }
+    &:-moz-placeholder { /* Firefox 18- */
+      text-align: center;
+      padding: 0 15px;
+    }
+  }
+}
+.slider-section{
+  .wrapper-for-absolut{
+    position: relative;
+  }
+  .flex-caption {
+    position: absolute;
+    top: 0;
+    left: 2%;
+    width: 96%;
+    padding: 5%;
+  }
+  .flexslider {
+    margin-bottom: 0;
+    border: none;
+    & img {
+      height: 50vh;
+    }
+    .author-photo {
+      width: 20%;
+      height: 20%;
+      margin: 10% auto 0;
+    }
+    .slider-article-header {
+      color: #fff;
+      font: 400 18px/20px "PT Serif";
+      text-align: center;
+    }
+    .tag-mark{
+      background-color: $blue;
+      color: #ffffff;
+      font: 700 14px/16px "PT Sans";
+      text-decoration: none;
+      padding: 2%;
+      position: absolute;
+      bottom: -15%;
+      transition: all ease 0.5s;
+      &:hover{
+        background-color: #ffffff;
+        color: $blue;
+      }
+
+    }
+    .info-holder{
+      padding: 2%;
+      margin: 0;
+      position: absolute;
+      bottom: -15%;
+      right: 0;
+    }
+    .publish-date{
+      color: $light-grey * 0.8;
+      font-weight: 400 14px/16px "PT Sans";
+      &:after{
+        content: " | ";
+        color: $light-grey * 0.8;
+      }
+    }
+    .publish-author{
+      color: $blue;
+      text-decoration: underline;
+      font-weight: 400 14px/16px "PT Sans";
+      transition: all ease 0.5s;
+      &:hover{
+        color: $red;
+      }
+    }
+  }
+  .flex-direction-nav .flex-next {
+    right: 0;
+  }
+  .flex-direction-nav .flex-prev {
+    left: 0;
+  }
+  .flex-direction-nav li>a{
+    background-color: #ffffff;
+    width: 30px;
+    height: 50px;
+    top: 40%;
+  }
+}
+.flex-control-nav, .flex-control-paging{
+  display: none;
+}
+.red{
+  background-color: $red;
+}
+.black{
+  background-color: black;
+}
+.latest-articles{
+  background-color: #f6f6f6;
+  padding: 2% 0;
+  .tag-wrapper{
+    position: inherit;
+    & .tag{
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      color: #fff;
+      font: 700 18px/36px "PT Sans";
+      padding: 1% 5%;
+      text-transform: capitalize;
+      transition: all 0.7s;
+      & a{
+        color: inherit;
+        text-decoration: none;
+      }
+    }
+  }
+  .latest-article-header{
+    color: #000;
+    font: 400 24px/36px "PT Serif";
+  }
+  .publish-info {
+    & .publish-date {
+      color: $light-grey * 0.8;
+      font: 400 12px/36px "PT Sans";
+      padding: 2% 0 2% 2%;
+      &:after{
+        content: " ";
+        border-right: 1px solid ($light-grey * 0.8);
+      }
+      & a {
+        color: inherit;
+      }
+    }
+    & .publish-author{
+      padding: 2%;
+      word-spacing: -0.05rem;
+      font: 400 12px/36px "PT Sans";
+      color: $blue;
+      text-decoration: underline;
+      transition: all 0.7s;
+      &:hover{
+        color: $blue * 0.6;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 320px) {
+
+}
+@media screen and (min-width: 767px) {
+  .custom-navbar {
+    .custom-navbar-brand {
+      font: 400 24px/36px "PT Sans";
+    }
+    .custom-left-menu {
+      & li {
+        font: 400 18px/36px "PT Sans";
+      }
+      .custom-nav-search {
+        &:hover .custom-form-control {
+          width: 300px;
+          border: 1px solid $light-grey;
+          border-top: none;
+        }
+        &:hover .custom-search-btn {
+          border: 1px solid $light-grey;
+          border-top: none;
+        }
+        .custom-form-control {
+          &:focus{
+            width: 300px;
+            border: 1px solid $light-grey;
+            border-top: none;
+          }
+        }
+      }
+    }
+    .custom-right-menu {
+      & li {
+        font: 400 18px/36px "PT Sans";
+      }
+    }
+  }
+  .custom-nav-search {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    .custom-search-btn {
+      position: relative;
+      border: none;
+      border-radius: 0;
+    }
+  }
+  .custom-form-control {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    transition: all 0.7s ease-in-out;
+    z-index: 99;
+  }
+  .slider-section {
+    .flex-direction-nav li>a{
+      width: 40px;
+      height: 50px;
+      top: 60%;
+    }
+    .custom-slider {
+      .slides-list {
+
+      }
+    }
+  }
+
+}
+.tag-info-wrapper {
+  .mark-wrapper {
+    & .mark-tag {
+      font: 700 18px/38px "PT Sans";
+    }
+  }
+  .publish-info {
+    & .publish-date {
+      font: 400 14px/38px "PT Sans";
+    }
+    & .publish-author{
+      font: 400 14px/38px "PT Sans";
+    }
+  }
+}
+@media screen and (min-width: 991px) {
+  .custom-navbar {
+    .custom-navbar-brand {
+      font: 400 22px/36px "PT Sans";
+    }
+    .custom-left-menu {
+      & li {
+        font: 400 16px/36px "PT Sans";
+      }
+      .with-form {
+        &:hover .custom-form-control {
+          border: 1px solid $light-grey;
+          border-top: none;
+        }
+        &:hover .custom-search-btn {
+          border: 1px solid $light-grey;
+          border-top: none;
+        }
+      }
+    }
+    .custom-right-menu {
+      & li {
+        font: 400 16px/36px "PT Sans";
+      }
+    }
+  }
+  .custom-nav-search {
+    .custom-search-btn {
+
+    }
+  }
+  .custom-form-control {
+    width: 0;
+    transition: all 0.7s ease-in-out;
+    left: 0;
+    z-index: 99;
+  }
+}
+@media screen and (min-width: 1199px) {
+
+}
+
