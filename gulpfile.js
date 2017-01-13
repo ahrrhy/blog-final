@@ -81,7 +81,7 @@ gulp.task('watch', ['jade', 'browser-sync','css-libs','scripts', 'sass' ], funct
     gulp.watch('js/**/*.js', browserSync.reload); // Наблюдение за JS файлами в папке js
 });
 
-gulp.task('build', ['clean', 'img', 'sass', 'scripts'], function() {
+gulp.task('build', [ 'img', 'sass', 'scripts'], function() {
 
     var buildCss = gulp.src([ // Переносим библиотеки в продакшен
         'css/screen.css',
