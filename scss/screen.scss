@@ -2,6 +2,8 @@ $blue:#1a54e7;
 $light-grey:#b2b2b2;
 $silver:silver;
 $red:#d90445;
+$green:#58b600;
+$violet:#8200b2;
 
 .navbar-default .navbar-nav>li>a {
   font: inherit;
@@ -208,6 +210,15 @@ $red:#d90445;
 .black{
   background-color: black;
 }
+.green{
+  background-color: $green;
+}
+.violet{
+  background-color: $violet;
+}
+.blue{
+  background-color: $blue;
+}
 .latest-articles{
   background-color: #f6f6f6;
   padding: 2% 0;
@@ -225,6 +236,10 @@ $red:#d90445;
       & a{
         color: inherit;
         text-decoration: none;
+      }
+      &:hover{
+        background-color: #ffffff;
+        color: $blue;
       }
     }
   }
@@ -253,7 +268,7 @@ $red:#d90445;
       text-decoration: underline;
       transition: all 0.7s;
       &:hover{
-        color: $blue * 0.6;
+        color: $red;
       }
     }
   }
@@ -284,6 +299,10 @@ $red:#d90445;
           color: inherit;
           text-decoration: none;
         }
+        &:hover{
+          background-color: #ffffff;
+          color: $blue;
+        }
       }
     }
     .latest-article-header{
@@ -311,7 +330,7 @@ $red:#d90445;
         text-decoration: underline;
         transition: all 0.7s;
         &:hover{
-          color: $blue * 0.6;
+          color: $red;
         }
       }
     }
@@ -691,7 +710,7 @@ $red:#d90445;
         & .tag {
           display: inline-block;
           position: absolute;
-          bottom: 55%;
+          bottom: 45%;
           color: #fff;
           font: 700 18px/36px "PT Sans";
           padding: 1% 5%;
